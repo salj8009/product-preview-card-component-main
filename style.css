@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --DarkCyan : hsl(158, 36%, 37%);
+    --Cream : hsl(30, 38%, 92%);
+
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+html {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+/*
+font-family: 'Fraunces', serif;
+
+*/
+main {
+    width: 100%;
+    height: 100vh;
+    min-width: 320px;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-background {
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 93%;
+    margin: 20px 15px 0 15px;
+    border-radius: 10px 10px 0px 0px;
+    max-width: 500px;
+}
+.content-info {
+    background-color: var(--White);
+    margin: 0 17px;
+    padding: 18px;
+    border-radius: 0px 0px 10px 10px;
+    max-width: 500px;
+}
+.text-title {
+    font-weight: 700;
+    color: var(--DarkGrayishBlue);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 15px;
+}
+.text-content {
+    color: var(--DarkGrayishBlue);
+    font-weight: 500;
+    font-size: 12px;
+    text-align: start;
+    line-height: 20px;    
+}
+.content-price {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.content-price__final {
+    color: var(--DarkCyan);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    margin-inline-end: 15px;
+}
+.content-price__ant {
+    color: var(--DarkGrayishBlue);
+    text-decoration: line-through;
+}
+button {
+    background-color: var(--DarkCyan);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #1A4031;
+}
+button img {
+    margin-inline-end: 8px;
+}
+
